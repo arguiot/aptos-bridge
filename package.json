@@ -1,0 +1,16 @@
+{
+  "name": "workspaces",
+  "private": "true",
+  "module": "index.ts",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "rm -rf packages/*/node_modules"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.0.4",
+    "tsconfig-paths": "^4.2.0"
+  }
+}
